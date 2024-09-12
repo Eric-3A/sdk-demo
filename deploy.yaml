@@ -4,8 +4,8 @@ services:
   vm:
     image: filswan/ubuntu-ssh-user:22.04
     env:
-      - sshkey=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC/aVnn6UU3To3/sRtjmwIfya08jCCTqOxltJTJoy+YW9UDaXXy8Sb2wPjpiTuFteb6KUM0EJEEz6QlI6D7xlzLJHpVzjGsW4k/CAd8RpiBLr8olO2A6gXgJ3cFUm6D2V+GG7pd3uK8tuQGAvhHIFVck68rIy2btv5pdK5w5a+kjFbOxgTd+Gy2FgH/QnL91/4lvZ0AviurAwX5wNVV2zPXLE4hK4UIMg3AKDgRYbj3PU6JBnow3nn0XcbvtBO+BOm3xtM9hsWzT6i00kmayhdVqYhHwujZIJmhcv9kGyc7p019X2O1dxAja7MlZ95cUMtibHCjAo7vkR8PVF6X/gDBhihTgSxd+Db62bb5LldqUVrUnpRxcyIBIa5Ihxw8xslwM396Hv1mIQ6bI5wkND9WoLbHLlMhGck9fLBEjZ0VcfcW28IRSYPmU6XttJeeUiSb1dNBgzrmfDXOfNEg3Q3wNyHqy8/z1lNVkPEcLjrMFL8uL0mGKYX2mCnLt02odFQ4zRKf22kfdOti9eS6aFVHelgmhoROocF9m0ZlmNl5/AA9YgMHtjij6LKQKMfUXQEWeSG1UOBp4YuQsu2xYOpP0Zsog0dizxHh8ufNK47rMn6fExvMF1SROH6zPF1nQn6DfzjkufWd9IS3LYsQPqxIN1p34racI8/lDd6fyIsN0Q== sonic@sonicdeMacBook-Pro.local
-      - username=swantouser
+      - sshkey=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9lbSSmLSznWZQ5q7f/OqumtXaM/x6sLWubl4Ro2qWbHLrwXGnpvY/IlCREV1vEmjiDlIilYgg6SEr3mFtPP4CPsedn9SkreWrDxoQClA7l6+OdIRHbvMa/kBgby0Bjwq+Kd4pE2s2x4rSqww6V/gL7D+4PikN+LDBTaXr8Go0jOglcgP1ZLuKAZIU3G0g81bEiTm59Oakc7AfVYnvR+QeeMwW27mVK/4aN7NsZT4l3E0Gj2dB61367ypEswrLaAzrhZmqIMZZxWo1wi+5IVyEqnn4dhsIY7iCDe4DknnnEWUYO4A/Rbfz9xnh9m0UVpJyVZjB+DcAPMzrVMNvGjgQh6WJ10Y2h8GeCWRuIYmxHVxwtHoH+fl0syE0ZO+SNXKk1p6VYFPMs4ZBrwn8xdtfZIU7JReZOfP5IjhhJfanQqNOKNYqMQgF6HRF4u85w9mPqGps4NCDgDtC1xIsNZIF+asmJ9eX4l8ZxO7Lw7CC3Ju5eTXG7myIaAoq8mOp/Zc= aaa@LAPTOP-F9AOI0BQ
+      - username=u01
     expose:
         - port: 22
         - port: 30002
@@ -14,6 +14,7 @@ services:
         - port: 30005
         - port: 30006
         - port: 30007
+        - port: 30008
 deployment:
   vm:
     lagrange:
