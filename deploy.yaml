@@ -8,13 +8,13 @@ services:
       - username=u01
     expose:
         - port: 22
-        - port: 30002
-        - port: 30003
-        - port: 30004
-        - port: 30005
-        - port: 30006
-        - port: 30007
-        - port: 30008
+        - port: 30012
+        - port: 30013
+        - port: 30014
+        - port: 30015
+        - port: 30016
+        - port: 30017
+        - port: 30018
 deployment:
   vm:
     lagrange:
